@@ -1,0 +1,204 @@
+/* Universal Elements */
+
+html {
+    font-family: 'Lato', serif;
+    font-size:16px;    
+}
+
+.main-content {
+    position: relative;
+    top: 5.3125rem; /* To offset for fixed header. */
+    padding-top:5.3125rem;
+}
+
+.content center {
+    text-align: center;
+}
+
+.image-container {
+    overflow: hidden; 
+}
+  
+.image-container img {
+    display: block;
+    max-width: 100%;
+}
+  
+@media only screen and (max-width: 895px) {
+    .main-content {
+      top: 2.5625rem;
+    }
+}
+  
+/* Header */
+
+header {
+    background-color: rgb(0,0,0);
+    color: rgb(255, 255, 255);
+    position:fixed;
+    width:100%;
+    z-index:100;
+    border-bottom:solid 18px rgb(121, 0, 187);
+}
+
+header .content {
+    display:flex;
+    align-items: center;
+    padding: 1.875rem;
+}
+
+header .logo {
+    flex: 1;
+}
+
+header nav ul {
+    display: flex;
+}
+
+nav li{
+    padding-left: 3.5rem;
+    list-style-type:none ;
+    
+}   
+
+nav a {
+    vertical-align: bottom;
+    line-height: 1.6;
+    font-size: 1rem;
+    color:rgb(255, 255, 255);
+  }
+
+  header .mobile {
+    display:none;
+  }
+
+  @media only screen and (max-width: 895px) {
+    nav li:last-child {
+      display: block;
+    }
+  
+    header .content {
+      padding: 1rem 1rem;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    header .desktop {
+      display:block
+    }
+  
+    header .mobile {
+      display: block;
+      width: 100%;
+    }
+  
+    header .content {
+      padding: .5rem 0;
+    }
+  
+    header .mobile ul {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+    }
+  
+    header .mobile li {
+      padding: 0;
+    }
+
+    header .desktop {
+        display: none;
+    }
+  }
+
+  .banner {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 43.5rem;
+    background-image: url(../Rescource/Images/GDK.jpeg);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat:no-repeat;
+
+  }
+
+  .view-artwork {
+    position:relative;
+    top: 171px;
+    left: 10%;
+    padding: 0 5rem 2.5rem 5rem;
+    border: solid 7px rgb(121, 0, 187);
+    border-radius: 4px;
+    background-color: rgb(0,0,0); 
+    color:rgb(255, 255, 255);
+  }
+
+  .view-artwork .contentc {
+    width: 26.624rem;
+    margin-top:2rem;
+    font-size: 1.25rem;
+    line-height:1.4;
+    color:rgb(255, 255, 255);
+
+  }
+
+  .view-artwork .cursive {
+    font-family: "Damion", cursive;
+    font-size: 2.25rem;
+  }
+
+  .view-artwork span strong {
+    font-weight: bold;
+  }
+
+  .WorkImg {
+    margin-top:1.625rem;
+    padding:1.25rem 7.25rem;
+    text-align:center;
+    background-color: rgb(121, 0, 187);
+    cursor: pointer;
+  }
+
+  @media only screen and (max-width:895px) {
+    .Artwork Section {
+        align-items: center;
+        justify-content: center;
+        height: 28rem;
+    }
+
+    .view-artwork {
+        position: static;
+        width: auto;
+        height: auto;
+        background-color: transparent;
+        border: none; 
+    }
+
+    .view-artwork .contentc {
+        margin-top: 0;
+        color: rgb(0,0,0);
+        text-align: center;
+        position: relative;
+        
+    }
+
+    .view-artwork .WorkImg {
+        display:none;
+    }
+
+    .view-artwork h2 {
+        font-size: 2.25rem;
+      }
+
+      @media only screen and (max-width: 600px) {
+        .Artwork Section {
+          height: 20rem;
+        }
+      
+        .view-artwork h2 {
+          font-size: 2rem;
+        }
+    }
+  }
